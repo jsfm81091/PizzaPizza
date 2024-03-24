@@ -1,21 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Playpen+Sans:wght@300&display=swap");
-/* =========================================== */
-/* ESCRITORIO XL REVISAMOS 1366PX EN ADELANTE */
-/* =========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Kaushan+Script&display=swap");
+
+/* ====================================
+ESCRITO (XL revisamos en 1366px en adelante)
+======================================== */
+
+/* Estilos generales */
+
 :root {
+  --primary: rgb(242, 178, 46);
   --success: #ffb84d;
   --dark: #131313;
-  --primary: rgb(242, 178, 46);
-
   --light: #eaeaea;
 }
-/* estilos globales */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
-  font-family: "Playpen Sans", cursive;
+  font-family: "Cabin", sans-serif;
 }
 
 body {
@@ -26,7 +28,7 @@ a {
   text-decoration: none;
 }
 
-/* estilos cabecera*/
+/* cabecera  */
 
 .header {
   display: flex;
@@ -49,6 +51,7 @@ a {
 .header .cont-logo img {
   height: 80px;
 }
+
 .header .cont-logo p {
   font-size: 35px;
   font-family: "Kaushan Script", cursive;
@@ -56,7 +59,6 @@ a {
   color: var(--light);
 }
 
-/* nav bar */
 .header .nav-bar a {
   border: 2px solid var(--primary);
   padding: 3px 10px;
@@ -66,15 +68,18 @@ a {
   margin-right: 10px;
   transition: 0.5s all;
 }
+
 .header .nav-bar a:hover {
   background: var(--primary);
   color: var(--dark);
   font-weight: bold;
 }
 
-.nav-bar-mobile {
+.navbar-mobile {
   display: none;
 }
+
+/* Banner */
 .banner {
   height: 100vh;
   width: 100%;
@@ -91,6 +96,7 @@ a {
 .banner .banner-cont {
   width: fit-content;
 }
+
 .banner .banner-cont h3 {
   font-size: 40px;
   color: var(--light);
@@ -131,15 +137,10 @@ a {
   margin-top: 100px;
   animation: animation-img-banner 20s linear infinite;
 }
-@keyframes animation-img-banner{
-    100%{
-        transform: rotate(360deg);
-    }
-}
 
-/* ====================================== */
-/* MOVILES REVISAMOS DE 768PX HACIA ABAJO */
-/* ====================================== */
+/* ==========================================
+ MOVILES (Revisamos de 768px hacia abajo)
+ ========================================= */
 @media (max-width: 768px) {
   .header {
     display: flex;
