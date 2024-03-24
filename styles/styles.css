@@ -38,7 +38,6 @@ a {
   width: 100%;
   padding: 10px;
   z-index: 100;
-  
 }
 
 .header .cont-logo {
@@ -46,12 +45,13 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
 .header .cont-logo img {
-  width: 80px;
+  height: 80px;
 }
 .header .cont-logo p {
   font-size: 35px;
-  font-family: "Amatic SC", sans-serif;
+  font-family: "Kaushan Script", cursive;
   font-weight: bold;
   color: var(--light);
 }
@@ -64,13 +64,14 @@ a {
   color: var(--primary);
   font-size: 20px;
   margin-right: 10px;
-  transition: 0.5s all ease;
+  transition: 0.5s all;
 }
 .header .nav-bar a:hover {
   background: var(--primary);
   color: var(--dark);
   font-weight: bold;
 }
+
 .nav-bar-mobile {
   display: none;
 }
@@ -83,9 +84,10 @@ a {
     var(--success) 40%
   );
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
 }
+
 .banner .banner-cont {
   width: fit-content;
 }
@@ -98,35 +100,36 @@ a {
   font-size: 90px;
   color: var(--light);
 }
+
 .banner .banner-cont p {
-  color: #989898;
+  color: #9e9898;
   font-size: 18px;
   width: 600px;
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
+
 .banner .banner-cont .btn-home {
-  background-color: #f1411e;
+  background: #ff2e02;
   padding: 10px 30px;
   font-weight: 500;
   letter-spacing: 1px;
   color: var(--light);
   border-radius: 6px;
   font-size: 20px;
-  border: 2px solid #f1411e;
+  border: 2px solid #ff2e02;
   transition: 0.3s;
 }
 
 .banner .banner-cont .btn-home:hover {
   background: transparent;
-  color: #f1411e;
+  color: #ff2e02;
 }
 
-.banner-cont .banner-img img{
-    max-width: 700px;
-    width: 90%;
-    margin-top: 100px;
-    animation: animation-img-banner 35s linear infinite;
-    
+.banner .banner-img img {
+  max-width: 700px;
+  width: 90%;
+  margin-top: 100px;
+  animation: animation-img-banner 20s linear infinite;
 }
 @keyframes animation-img-banner{
     100%{
@@ -137,7 +140,6 @@ a {
 /* ====================================== */
 /* MOVILES REVISAMOS DE 768PX HACIA ABAJO */
 /* ====================================== */
-
 @media (max-width: 768px) {
   .header {
     display: flex;
@@ -145,50 +147,49 @@ a {
     align-items: center;
     background: var(--dark);
   }
-  .header .cont-logo p {
-    font-size: 70px;
-  }
 
-  .header .cont-logo img {
-    width: 65px;
-  }
   .header .nav-bar {
     display: none;
   }
-  .nav-bar-mobile {
+
+  .navbar-mobile {
     display: block;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 60px;
+    background: var(--primary);
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     z-index: 200;
   }
-  .nav-bar-mobile a {
+
+  .navbar-mobile a {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     padding: 10px;
-    background: var(--success);
-    color: var(--dark);
+    background: var(--dark);
+    border: 2px solid var(--dark);
+    color: var(--primary);
     font-weight: bold;
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .nav-bar-mobile a:hover {
-    background-color: var(--light);
-    color: var(--success);
-  }
-}
 
-/*banner*/
-.banner{
+  .navbar-mobile a:hover {
+    background: var(--primary);
+    color: var(--dark);
+  }
+
+  /* banner */
+
+  .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,25 +197,44 @@ a {
     padding-top: 150px;
     height: 100%;
     overflow: hidden;
-}
+  }
 
-.banner .banner-cont h3{
+  .banner .banner-cont h3 {
     font-size: 30px;
-    margin-top: 40px;
-}
-.banner .banner-cont h2{
+    margin-top: 30px;
+  }
+  .banner .banner-cont h2 {
     font-size: 50px;
-}
-.banner .banner-cont p{
-    width: 200px;
-}
-.banner .banner-cont {
+  }
+
+  .banner .banner-cont p {
+    width: auto;
+  }
+
+  .banner .banner-cont {
     width: 100%;
     padding: 20px;
-}
-.banner .banner-img{
+  }
+
+  .banner .banner-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+  }
+}
+
+@keyframes animation-img-banner {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
 }
