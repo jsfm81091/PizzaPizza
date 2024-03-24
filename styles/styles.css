@@ -223,13 +223,7 @@ a {
 }
 
 @keyframes animation-img-banner {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
+ 
 
   100% {
     transform: rotate(360deg);
