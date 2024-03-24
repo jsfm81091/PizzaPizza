@@ -1,15 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Kaushan+Script&display=swap");
-
-/* ====================================
-ESCRITO (XL revisamos en 1366px en adelante)
-======================================== */
-
-/* Estilos generales */
-
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Playpen+Sans:wght@300&display=swap");
+/* =========================================== */
+/* ESCRITORIO XL REVISAMOS 1366PX EN ADELANTE */
+/* =========================================== */
 :root {
-  --primary: rgb(242, 178, 46);
   --success: #ffb84d;
   --dark: #131313;
+  --primary: rgb(242, 178, 46);
+
   --light: #eaeaea;
 }
 
